@@ -1,6 +1,6 @@
 h2 {
     font-family: Veneer, Helvetica, sans-serif;
-    font-weight: 525;
+    font-weight: 500;
 }
 
 @font-face {
@@ -8,7 +8,7 @@ h2 {
     src: url(../Others/Veneer.ttf);
 }
 body {
-    margin: 50px 0px 0px 50px;
+    margin: 50px 0 0 50px;
 }
 
 p {
@@ -25,7 +25,7 @@ i {
 }
 
 div {
-    margin: 0px 0px 50px 0px;
+    margin: 0 0 50px 0;
 }
 
 .fa {
