@@ -1,0 +1,80 @@
+:root {
+
+    /* colour */
+    --navy-blue: #004369;
+    --teal: #01949a;
+    --red: #db1f48;
+    --sand-dollar: #e5ddc8;
+    --pink: #bdf349;
+    --spearmint: #94c973;
+
+    /* apply, change here */
+    --headerColor: var(--red);
+    --frameColor: var(--navy-blue);
+    --headerFooterColor: var(--sand-dollar);
+    --nameColor: var(--spearmint);
+    --priceColor: var(--teal);
+    --ingredientColor: var(--sand-dollar);
+    --borderRadius: 2rem;
+    --max-width: 1120px;
+    --fixed-width: 600px;
+    --headingFont: 'Playfair Display', serif;
+    --nameFont: 'Ephesis', cursive;
+    --priceFont: 'Consolas', sans-serif;
+    --ingredientFont: 'Lato', sans-serif;
+}
+
+body {
+    background: url(./background.png);
+    margin: 0;
+    /* make it center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* end: make it center */
+}
+
+.frame {
+    background-color: var(--frameColor);
+    border-radius: var(--borderRadius);
+    width: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    /* display: block; */
+    font-family: var(--headingFont);
+    font-size: 50px;
+    color: var(--headerColor);
+    margin: auto;
+}
+
+header, footer {
+    font-size: 85%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--headerFooterColor);
+}
+
+.name {
+    color: var(--nameColor);
+    font-family: var(--nameFont);
+    font-size: 34px;
+    margin-right: 10px;
+}
+
+.price {
+    color: var(--priceColor);
+    font-family: var(--priceFont);
+}
+
+.ingredients {
+    color: var(--ingredientColor);
+    font-family: var(--ingredientFont);
+}
+
+
