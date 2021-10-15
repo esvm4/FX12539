@@ -38,7 +38,7 @@ table.zebra tbody tr:last-of-type {
 }
 
 table.zebra tbody tr.highlight {
-    font-weight: bold;
+    font-weight: 1000;
     color: #098a34;
 }
   
