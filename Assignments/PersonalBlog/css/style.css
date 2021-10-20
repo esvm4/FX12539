@@ -18,9 +18,10 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 #header #logo i{display:block; margin-bottom:20px; font-size:3.5rem;}
 
 main {
-	padding: 200px;
+	padding: 100px 200px;
 	font-family: 'Mukta', sans-serif;
 	font-size: 1rem;
+	text-align: justify;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Noto Serif Display', serif;
@@ -89,19 +90,19 @@ section.articles p.contents {
 section.articles h2.titles, h2.titles {
 	color: #c09999;
 	font-weight: 500;
+	text-align: center;
 }
 section.articles a.more, a	{
 	color: rgb(7, 89, 165);
 	text-decoration: underline;
 }
-img.cakes {
-	width: 700px;
+img.more-photos, img.cakes, img.author {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 700px;
 }
 
-figure.author {
-	color: #c09999;
-	
-}
 footer {
 	color: rgb(241, 122, 86);
 }
