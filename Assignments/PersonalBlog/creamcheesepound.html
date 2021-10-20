@@ -9,44 +9,40 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/png"/>
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Noto+Serif+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- header -->
   <header>
-    <p>Blog</p>
-    <h1>Ngoc's Cakey Blog</h1>
-    <span>
-      <img src="./images/CakeyLogo.png" alt="Blog Logo"/>
-      <img src="./images/banner.png" alt="Banner" width="800">
-  </span>
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html"> Home </a>
-        </li>
-        <li>
-          Products
-          <ol>
-            <li>
-              <a href="classicyellow.html">Classic Yellow Cake</a>
+    <div class="bgded overlay" style="background-image:url('./images/banner.png');"> 
+      <div class="wrapper row0">
+        <header id="header" class="hoc clear center"> 
+          <!-- Logo -->
+          <h1 id="logo">Wel<img src="./images/CakeyLogo.png" alt="Cakey Logo"/> <a href="index.html">come</a></h1>
+          <!-- End: Logo -->
+        </header>
+      </div>
+      <div class="wrapper row1">
+        <nav id="mainav" class="hoc clear">
+          <ul class="clear">
+            <li><a href="index.html">Home</a></li>
+            <li><p class="drop" href="#">Products</p>
+              <ul>
+                <li><a href="classicyellow.html">Classic Yellow Cake</a></li>
+                <li><a href="coconutbundt.html">Coconut Bundt Cake</a></li>
+                <li class="active"><a href="creamcheesepound.html">Cream Cheese Pound Cake</a></li>
+                <li><a href="germanchocolate.html">German Chocolate Cake</a></li>
+              </ul>
             </li>
-            <li>
-              <a href="coconutbundt.html">Coconut Bundt Cake</a>
-            </li>
-            <li>
-              <a href="creamcheesepound.html">Cream Cheese Pound Cake</a>
-            </li>
-            <li>
-              <a href="germanchocolate.html">German Chocolate Cake</a>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <a href="about.html"> About </a>
-        </li>
-      </ul>  
-    </nav>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
   <!-- end: header -->
     
@@ -55,19 +51,18 @@
 
     <!-- article title and date -->
     <article>
-      <p>Date added: 05 Jan</p>
-      <h2>Perfect Cream Cheese Pound Cake</h2>
+      <p class="dates">Date added: 05 Jan</p>
+      <h2 class="titles">Perfect Cream Cheese Pound Cake</h2>
     </article>
     <!-- end: article title and date -->
 
     <!-- 1st picture -->
-    <div>
+    <section class="articles">
       <br>
-      <br>
-      <p>Until recently, I had never made really good plain pound cake. I have delicious <a href="https://sallysbakingaddiction.com/iced-lemon-pound-cake/" target="_blank">lemon pound cake</a>, <a href="https://sallysbakingaddiction.com/raspberry-swirl-pound-cake/" target="_blank">raspberry swirl pound cake</a>, and <a href="https://sallysbakingaddiction.com/brown-butter-pound-cake-strawberry-compote/" target="_blank">brown butter pound cake</a> in my back pocket, but regular pound cake has always been a disappointment. It was so hard for me to tackle this recipe because pound cake can easily turn out dry, rock solid, and/or lacking flavor.</p>
-      <p>But then I began adding cream cheese and sour cream to the cake batter. And my long history of pound cake disappointments began fading away.</p>
-      <img src="./images/cream-cheese-pound-cake-1.jpg" alt="Cream Cheese Pound Cake 1">
-      <p>Today I’m teaching you how to make my favorite cream cheese pound cake in a Bundt pan. I’m confident this is <b><i>the best pound cake</i></b> and I’m showing you exactly why:</p>
+      <p class="contents">Until recently, I had never made really good plain pound cake. I have delicious <a href="https://sallysbakingaddiction.com/iced-lemon-pound-cake/" target="_blank">lemon pound cake</a>, <a href="https://sallysbakingaddiction.com/raspberry-swirl-pound-cake/" target="_blank">raspberry swirl pound cake</a>, and <a href="https://sallysbakingaddiction.com/brown-butter-pound-cake-strawberry-compote/" target="_blank">brown butter pound cake</a> in my back pocket, but regular pound cake has always been a disappointment. It was so hard for me to tackle this recipe because pound cake can easily turn out dry, rock solid, and/or lacking flavor.</p>
+      <p class="contents">But then I began adding cream cheese and sour cream to the cake batter. And my long history of pound cake disappointments began fading away.</p>
+      <img class="cakes" src="./images/cream-cheese-pound-cake-1.jpg" alt="Cream Cheese Pound Cake 1">
+      <p class="contents">Today I’m teaching you how to make my favorite cream cheese pound cake in a Bundt pan. I’m confident this is <b><i>the best pound cake</i></b> and I’m showing you exactly why:</p>
       <ul>
         <li>Very buttery & very moist</li>
         <li>Not dry</li>
@@ -79,14 +74,14 @@
         <li>Sweet & vanilla flavored</li>
       </ul>
       <p>You can easily halve this recipe for a loaf pan or try my mini pound cakes recipe.</p>
-    </div>
+    </section>
     <!-- end: 1st picture -->
 
     <!-- 2nd picture -->
-    <section>
-      <img src="./images/cream-cheese-pound-cake-2.jpg" alt="Cream Cheese Pound Cake 2">
-      <h2>Cream Cheese Pound Cake Ingredients</h2>
-      <p>Here are the ingredients for cream cheese pound cake and why each is used.</p>
+    <section class="articles">
+      <img class="cakes" src="./images/cream-cheese-pound-cake-2.jpg" alt="Cream Cheese Pound Cake 2">
+      <h2 class="titles">Cream Cheese Pound Cake Ingredients</h2>
+      <p class="contents">Here are the ingredients for cream cheese pound cake and why each is used.</p>
       <ol>
         <li><b>Butter:</b> Butter is the base of pound cake. You need 3 sticks of <a href="https://sallysbakingaddiction.com/room-temperature-butter/" target="_blank">properly softened butter</a>.</li>
         <li><b>Cream cheese:</b>  Cream cheese is the difference between dry pound cake and moist pound cake. End of story. If you’ve experienced dry pound cake before, cream cheese will solve all those problems. I swear by it and you will too!</li>
@@ -97,16 +92,16 @@
         <li><b>Cake Flour:</b> Cake flour is lighter than all-purpose flour and produces the best pound cake in my opinion. Since it’s so light, the attention remains on the butter. All-purpose flour is simply too heavy for this pound cake recipe; the cake will be heavy as a brick. If needed, use this homemade cake flour substitute.</li>
         <li><b>Baking Powder:</b> Baking powder is another unconventional ingredient in pound cake. I don’t use much for this amount of batter, but the small amount lightly lifts the crumb so the cake isn’t overly heavy and squat.</li>
       </ol>
-      <p>Each ingredient is important and has a very specific job!</p>
+      <p class="contents">Each ingredient is important and has a very specific job!</p>
     </section>
     <!-- end: 2nd picture -->
 
     <!-- 3rd picture -->
-    <div>
-      <img src="./images/cream-cheese-pound-cake-3.jpg" alt="Cream Cheese Pound Cake 3">
-      <img src="./images/cream-cheese-pound-cake-4.jpg" alt="Cream Cheese Pound Cake 4">
-      <h2>How to Make Cream Cheese Pound Cake</h2>
-      <p>Now that you know what can go wrong, let’s talk about how to make the most perfect cream cheese pound cake. The *TRICK* is a lot of mixing before you add the eggs.</p>
+    <section class="articles">
+      <img class="cakes" src="./images/cream-cheese-pound-cake-3.jpg" alt="Cream Cheese Pound Cake 3">
+      <img class="cakes" src="./images/cream-cheese-pound-cake-4.jpg" alt="Cream Cheese Pound Cake 4">
+      <h2 class="titles">How to Make Cream Cheese Pound Cake</h2>
+      <p class="contents">Now that you know what can go wrong, let’s talk about how to make the most perfect cream cheese pound cake. The *TRICK* is a lot of mixing before you add the eggs.</p>
       <ol>
         <li><b>Mix, mix, mix:</b> Beat the butter until creamy. Add the cream cheese, then beat the two until smooth. Get all the cream cheese lumps out. Beat in the sugar, then add the sour cream and vanilla. So far there’s been a lot of mixing and that’s ok!</li>
         <li><b>1 egg at a time:</b>Add the eggs 1 at a time, making sure each is incorporated before adding the next. When the eggs are room temperature, the mixer only needs a few turns and won’t over-mix them. Over-mixed batter = heavy-as-a-brick cake.</li>
@@ -116,22 +111,22 @@
         <li><b>Cool, then invert:</b>Let the pound cool for about 2 hours in the pan, then invert onto a serving plate and cool completely before serving.</li>
       </ol>
       <p>Serve with <a href="https://sallysbakingaddiction.com/homemade-whipped-cream/" target="_blank">whipped cream</a>, fresh berries, <a href="https://sallysbakingaddiction.com/homemade-strawberry-topping/" target="_blank">strawberry topping sauce</a>, and/or <a href="https://sallysbakingaddiction.com/how-to-make-lemon-curd/" target="_blank">homemade lemon curd</a>. There’s a simplistic beauty about pound cake– it doesn’t need glaze, frosting, bells, or whistles.</p>
-    </div>
+    </section>
     <!-- end: 3rd picture -->
 
     <!-- more pictures -->
     <div>
-      <img src="./images/cream-cheese-pound-cake-1.jpg" alt="Cream Cheese Pound Cake 1">
+      <img class="cakes" src="./images/cream-cheese-pound-cake-1.jpg" alt="Cream Cheese Pound Cake 1">
       <br>
-      <img src="./images/cream-cheese-pound-cake-2.jpg" alt="Cream Cheese Pound Cake 2">
+      <img class="cakes" src="./images/cream-cheese-pound-cake-2.jpg" alt="Cream Cheese Pound Cake 2">
       <br>
-      <img src="./images/cream-cheese-pound-cake-3.jpg" alt="Cream Cheese Pound Cake 3">
+      <img class="cakes" src="./images/cream-cheese-pound-cake-3.jpg" alt="Cream Cheese Pound Cake 3">
       <br>
-      <img src="./images/cream-cheese-pound-cake-4.jpg" alt="Cream Cheese Pound Cake 4">
+      <img class="cakes" src="./images/cream-cheese-pound-cake-4.jpg" alt="Cream Cheese Pound Cake 4">
       <br>
-      <img src="./images/cream-cheese-pound-cake-5.jpg" alt="Cream Cheese Pound Cake 5">
+      <img class="cakes" src="./images/cream-cheese-pound-cake-5.jpg" alt="Cream Cheese Pound Cake 5">
       <br>
-      <img src="./images/cream-cheese-pound-cake-6.jpg" alt="Cream Cheese Pound Cake 6">
+      <img class="cakes" src="./images/cream-cheese-pound-cake-6.jpg" alt="Cream Cheese Pound Cake 6">
     </div>
     <!-- end: more pictures -->
 
