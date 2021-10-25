@@ -43,11 +43,10 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #mainav li li{width:100%; margin:0;}
 #mainav li a{display:block; padding:20px 0;}
 #mainav li li a{border:solid; border-width:0 0 1px 0;}
-#mainav .drop{padding-left:15px;}
+#mainav .drop{padding-left:15px; text-decoration: underline;} 
 #mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
 #mainav .drop::after, #mainav li li .drop::after{content:"\f0d7";}
 #mainav .drop::after{top:25px; left:5px;}
-#mainav li li .drop::after{top:15px; left:5px;}
 #mainav ul ul{visibility:hidden; opacity:0;}
 #mainav ul li:hover > ul{visibility:visible; opacity:1;}
 
@@ -61,23 +60,16 @@ body {
 hr, .borderedbox{border-color:#D7D7D7;}
 
 .overlay{color:#FFFFFF; background-color:inherit;}
-.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
-.overlay.light{color:#474747;}
-.overlay.light::after{background-color:rgba(255,255,255,.7);}
+.overlay::after{color:inherit; background-color:#0000008c;}
 
 /* Rows */
 .row0, .row0 a{color:#FFFFFF;}
-.row1{background-color:rgba(144,153,170,.5);/* #9099AA */}
-.row2{color:#474747; background-color:#EFEFEF;}
-.row3{color:#474747; background-color:#FFFFFF;}
-.row4{color:#DFDFDF; background-color:#3F4A5C;}
-.row5, .row5 a{color:#5F6F89; background-color:#2C3541;}
-
+.row1{background-color:#2d2f3580;}
 
 /* Navigation */
 #mainav li a{color:inherit;}
-#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#FFB900; background-color:inherit;}
-#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(144,153,170,.5); border-color:rgba(144,153,170,1);}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#ffae00; background-color:inherit;}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:#2d2f3580; border-color:rgba(144,153,170,1);}
 #mainav li li:hover > a, #mainav .active .active > a{color:#FFB900; background-color:#9099AA;}
 #mainav form select{color:#474747; background-color:#FFFFFF;}
 
@@ -94,7 +86,7 @@ section.articles h2.titles, h2.titles {
 }
 section.articles a.more, a	{
 	color: rgb(7, 89, 165);
-	text-decoration: underline;
+	text-decoration: underline; 
 }
 img.more-photos, img.cakes, img.author {
 	display: block;

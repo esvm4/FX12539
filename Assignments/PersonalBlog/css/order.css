@@ -1,0 +1,162 @@
+@import url(style.css);
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+#order-form {
+	width: 100%;
+	height: 100%;
+    margin: 0 auto;
+	/* background-color: #ffffff; */
+}
+
+form {
+	max-width: 550px;
+	width: 200%;
+	background: #ffffff;
+	margin: 0.5vh auto;
+	padding: 40px;
+	border-radius: 5px;
+}
+
+label {
+	display: block;
+	margin: 20px 0;
+    font-weight: 700;
+    /* text-decoration: underline; */
+    position: relative;
+}
+
+select#cakes {
+    display: block;
+    margin-left: 5vh;
+    text-align: center;
+    float: inline-end;
+    text-decoration: none;
+}
+input, textarea {
+	border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
+h2 {
+    margin-bottom: 0.5vh;
+    background-color: #fbefdf;
+    text-align: center;
+}
+
+section#order-form form input[type="text"]:hover, section#order-form form textarea:hover, section#order-form form input[type="email"]:hover, section#order-form form input[type="text"]:focus, section#order-form form textarea:focus, section#order-form form input[type="email"]:focus {
+	border-bottom: 1px solid #ff006a;
+}
+
+textarea::--webkit-scrollbar {
+	width: 4px;
+}
+
+textarea::--webkit-scrollbar-thumb {
+	background-color: #ff006a;
+}
+
+input[type="submit"] {
+	width: 90%;
+	max-width: 200px;
+	margin: 30px auto;
+	background-color: #f08080;
+	/* color: #008000; */
+	font-size: 1.2rem;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+    background-color: #add8e6;
+}
+
+i {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+    color: #ff006a;
+}
+i.fa-check-circle {
+    color: #11a511;
+}
+
+small {
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    color: #ff006a;
+}
+
+#thank-you {
+    visibility: hidden;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #11a511;
+}
+
+.includes-group {
+    display: flex;
+    flex-direction: column;
+}
+.radio-call {
+    display: block;
+    flex-direction: row;
+}
+
+.checkbox {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0vh 0;
+}
+
+.checkbox .label, .radio-call label, .radio-call input {
+    font-size: 0.9rem;
+    margin: 0 10px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.checkbox .checkmark, .radio-call input {
+    width: 1.2vw;
+    height: 1.2vw;
+    border: 2px solid #222;
+    display: inline-block;
+    border-radius: 3px;
+    background: #222 url(../images/checked.png) center/1250% no-repeat;
+    transition: background-size 0.2s ease;
+}
+
+.checkbox input:checked + .checkmark, .radio-call input {
+    background-size: 60%;
+    transition: background-size 0.25s cubic-bezier(0.7, 0, 0.18, 1.24);
+}
+
+.checkbox input {
+    display: none;
+}
+
+.includes {
+    margin-bottom: 0;
+}
+
+.radio-call input, .radio-call label {
+    float: left;
+}
