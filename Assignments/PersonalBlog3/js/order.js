@@ -1,16 +1,16 @@
+const cake = document.getElementById('cakes');
+const fname = document.getElementById('fname');
+const message = document.getElementById('message');
+const ddate = document.getElementById('ddate');
+const address = document.getElementById('address');
+
 function checkInputs() {
 
 	var test = true;
-
-    const cake = document.getElementById('cakes');
-	const fname = document.getElementById('fname');
-	const message = document.getElementById('message');
-	const ddate = document.getElementById('ddate');
-	const address = document.getElementById('address');
-
+	
     var cakeValue = cake.value;
 	if (cakeValue === '') {
-		errorMessage(cakes, "Please choose our product.");
+		errorMessage(cake, "Please choose our product.");
 		test = false;
 	}
 	else {
@@ -79,4 +79,19 @@ function success(input) {
 	label.querySelector('.fa-check-circle').style.visibility = 'visible';
 	label.querySelector('.fa-exclamation-circle').style.visibility = 'hidden';
 	label.querySelector('small').style.visibility = 'hidden';
+}
+
+window.onload = function validDate() {
+	const todayDate = new Date();
+	const date = todayDate.getDate();
+	const month = todayDate.getMonth() + 1;
+	const year = todayDate.getUTCFullYear();
+	if (date < 10) {
+		date = "0" + date;
+	}
+	if (month < 10) {
+		month = "0" + month;
+	}
+	var min = year + "-" + month + "-" + date;
+	document.getElementById("ddate").setAttribute("min", min);
 }
