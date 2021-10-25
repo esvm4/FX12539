@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png"/>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Noto+Serif+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/order.css">
+</head>
+<body>
+  <script src="./js/order.js"></script>
+  <!-- header -->
+  <header>
+    <div class="bgded overlay" style="background-image:url('./images/banner.png');"> 
+      <div class="wrapper row0">
+        <header id="header" class="hoc clear center"> 
+          <!-- Logo -->
+          <h1 id="logo">Wel<img src="./images/CakeyLogo.png" alt="Cakey Logo"/> <a href="index.html">come</a></h1>
+          <!-- End: Logo -->
+        </header>
+      </div>
+      <div class="wrapper row1">
+        <nav id="mainav" class="hoc clear">
+          <ul class="clear">
+            <li><a href="index.html">Home</a></li>
+            <li><p class="drop" href="#">Products</p>
+              <ul>
+                <li><a href="classicyellow.html">Classic Yellow Cake</a></li>
+                <li><a href="coconutbundt.html">Coconut Bundt Cake</a></li>
+                <li><a href="creamcheesepound.html">Cream Cheese Pound Cake</a></li>
+                <li><a href="germanchocolate.html">German Chocolate Cake</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Me!</a></li>
+            <li class="active"><a href="order.html">Order</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- end: header -->
+    
+  <!-- main body -->
+  <main>    
+    <section id="order-form">
+      <form id="form">
+        <h2>Order now</h2>
+        
+        <label class="cakes">Cake Name
+            <select id="cakes">
+                <option value="" disabled selected hidden>--- Select cake ---</option>
+                <option value="class-yellow">Classic Yellow Cake</option>
+                <option value="coconut-bundt">Coconut Bundt Cake</option>
+                <option value="cream-cheese">Cream Cheese Pound Cake</option>
+                <option value="german-chocolate">German Chocolate Cake</option>
+            </select>
+            <br>
+            <i class="fas fa-check-circle" id="v"></i>
+            <i class="fas fa-exclamation-circle" id="x"></i>
+            <small class="error">Error message</small>
+        </label>
+        
+        <label class="fname">Your Name
+            <input type="text" name="fname" id="fname" placeholder="John Charles Keating">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small class="error">Error message</small>
+        </label>
+
+        <label class="message">Message
+          <input type="text" name="message" id="message" placeholder="Something you want to write on the cake"></input>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small class="error">Error</small>
+        </label>
+
+        <label for="" class="includes">Includes
+            <div class="includes-group">
+                <label class="checkbox" aria-label="Candle">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="label">Candle</span>
+                </label>
+              
+                <label class="checkbox" aria-label="Firework">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="label">Firework</span>
+                </label>
+    
+                <label class="checkbox" aria-label="Toys">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="label">Toys</span>
+                  </label>
+            </div>
+        </label> 
+
+        <label class="ddate">Delivery Date
+          <input type="date" name="ddate" id="ddate">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small class="error">Error message</small>
+      </label>
+
+      <label for="address" class="address">Deliver to
+        <textarea name="address" id="address" rows="5"></textarea>
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small class="error">Error message</small>
+      </label>
+
+      <label for="">Call before delivery?
+        <div class="radio-call">
+          <input type="radio" id="callYes" name="callBeforeDelivery" value="callYes">
+          <label for="callYes">Yes</label><br>
+          <input type="radio" id="callNo" name="callBeforeDelivery" checked value="callNo">
+          <label for="callNo">No</label>
+        </div>
+  
+          <section class="submit">
+            <input type="submit" value="Order now" onclick="return checkInputs()">
+            <p id="thank-you">Thank you for your order &#9829</p>
+          </section>
+      </label>
+      
+      </form>
+    </section>    
+  </main>
+  <!-- end: main body -->
+
+  <!-- footer -->
+  <footer>
+    <p>&copy; 2021 by Ngoc's blog</p>
+  </footer>
+  <!-- end: footer -->
+  
+</body>
+</html>

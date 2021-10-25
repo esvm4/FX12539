@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me!</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png"/>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Noto+Serif+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+  <script src="./js/contact.js"></script>
+  <!-- header -->
+  <header>
+    <div class="bgded overlay" style="background-image:url('./images/banner.png');"> 
+      <div class="wrapper row0">
+        <header id="header" class="hoc clear center"> 
+          <!-- Logo -->
+          <h1 id="logo">Wel<img src="./images/CakeyLogo.png" alt="Cakey Logo"/> <a href="index.html">come</a></h1>
+          <!-- End: Logo -->
+        </header>
+      </div>
+      <div class="wrapper row1">
+        <nav id="mainav" class="hoc clear">
+          <ul class="clear">
+            <li><a href="index.html">Home</a></li>
+            <li><p class="drop" href="#">Products</p>
+              <ul>
+                <li><a href="classicyellow.html">Classic Yellow Cake</a></li>
+                <li><a href="coconutbundt.html">Coconut Bundt Cake</a></li>
+                <li><a href="creamcheesepound.html">Cream Cheese Pound Cake</a></li>
+                <li><a href="germanchocolate.html">German Chocolate Cake</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li class="active"><a href="contact.html">Contact Me!</a></li>
+            <li><a href="order.html">Order</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- end: header -->
+    
+  <!-- main body -->
+  <main>    
+    <section id="contact-form">
+      <form id="form">
+        <h2>Contact Me</h2>
+        <label class="fname">Your Name
+            <input type="text" name="fname" id="fname" placeholder="John Charles Keating"">
+            <i class="fas fa-check-circle" id="v"></i>
+            <i class="fas fa-exclamation-circle" id="x"></i>
+            <small class="error">Error message</small>
+        </label>
+        
+        <label class="email">Your Email
+            <input type="email" name="email" id="email" placeholder="jckeating@pm.me"">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small class="error">Error message</small>
+        </label>
+
+        <label class="email">Subject
+            <input type="text" name="subject" id="subject" placeholder="How to make a Saturday strawberry pancake with banana?">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small class="error">Error message</small>
+        </label>
+
+        <label for="message" class="message">Message
+          <textarea name="message" id="message" rows="5" placeholder="Something you wish to say to me?"></textarea>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small class="error">Error</small>
+        </label>
+        <section class="submit">
+          <input type="submit" value="Send" onclick="return checkInputs()">
+          <p id="thank-you">Thank you for your message &#9829</p>
+        </section>
+      </form>
+    </section>    
+  </main>
+  <!-- end: main body -->
+
+  <!-- footer -->
+  <footer>
+    <p>&copy; 2021 by Ngoc's blog</p>
+  </footer>
+  <!-- end: footer -->
+  
+</body>
+</html>
