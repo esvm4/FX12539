@@ -74,8 +74,8 @@ hr, .borderedbox{border-color:#D7D7D7;}
 #mainav form select{color:#474747; background-color:#FFFFFF;}
 
 /* Articles  */
-section.articles p.contents {
-	color: #c09999;
+section.articles p.contents, .author-info {
+	color: #99844D;
 	font-size: 20px ;
 	line-height: 100%;
 }
@@ -85,7 +85,7 @@ section.articles h2.titles, h2.titles {
 	text-align: center;
 }
 section.articles a.more, a	{
-	color: rgb(7, 89, 165);
+	color: #0759a5;
 	text-decoration: underline; 
 }
 img.more-photos, img.cakes, img.author {
@@ -96,5 +96,5 @@ img.more-photos, img.cakes, img.author {
 }
 
 footer {
-	color: rgb(241, 122, 86);
+	color: #f17a56;
 }
